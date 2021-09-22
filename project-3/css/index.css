@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent div{
+    text-align: left;
+    padding: 10px;
+    width: calc( calc(100% / 3));
+    color: white;
+
+}
+
+.parent .one{
+    background-color: #e28525;
+
+}
+.parent .two{
+    background-color: #016972;
+
+}
+.parent .three{
+    background-color: #00403f;
+
+}
+
+.parent .logo{
+    margin: 20px;
+}
+
+
+.parent div h1{
+    text-transform: uppercase;
+    margin: 10px 0px 20px 30px;
+
+}
+.parent div p{
+    color: white;
+    opacity: 0.6;
+    font-weight: normal;
+    margin: 30px 45px 35px 30px;
+    font-size: 24px;
+}
+.parent .one p{
+    margin:30px 45px 63px 30px;
+}
+.parent div button{
+    margin: 0px 0px 30px 30px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border-color: white;
+}
+
+.parent .one button:hover{
+    background-color: #e28525;
+}
+.parent .two button:hover{
+    background-color: #016972;
+}
+.parent .three button:hover{
+    background-color: #00403f;
+}
+.parent div button:hover span{
+    color: white;
+}
+
+.parent .one button span{
+    color: #e28525;
+}
+.parent .two button span{
+    color: #016972;
+}
+.parent .three button span{
+    color: #00403f;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .parent div{
+        width: calc(100%);
+    } 
+}
